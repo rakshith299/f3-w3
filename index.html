@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel = "icon" type="image/x-icon" href = "https://img.lovepik.com/free-png/20210922/lovepik-3d-alarm-clock-png-image_401077270_wh1200.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="body">
+        <h1>Multiple Timers App</h1>
+
+        <!--Setting Timer -->
+        <div class = "set-timer-cont">
+            <div class = "cont-heading">
+                Set Time : 
+            </div>
+
+            <div class = "actual-timer-cont">
+                <span id = "hr" class = "hour" contenteditable="true">hh</span> : 
+                <span id = "min" class = "minutes" contenteditable="true">mm</span> :
+                <span id = "sec" class = "seconds" contenteditable="true">ss</span>
+            </div>
+
+            <div class = "button" id = "set-timer-button">
+                <button type = "button" id = "set-button">Set</button>
+            </div>
+        </div>
+    
+
+        <div class="current-clear-div">
+            <div class="current-timers-cont">
+                <h2 class="current-timers">Current Timers</h2>               
+            </div>
+            <button type = "button" id = "clear-timers">Clear All Timers</button>
+        </div>
+        
+
+        <!--All set Timers display container-->
+
+
+        <div class = "all-timers-cont" id = "all-timers-cont">
+            <p id = "no-timers-display-text" class = "no-timers-display-text">No current active timers ...</p>
+        </div>
+
+    </div>
+
+
+    <div style="display: none;">
+        <audio id = "audio">
+            <source src="./supports/ttsMP3.com_VoiceText_2023-7-22_15_34_39.mp3">
+        </audio>
+    </div>
+
+	<script src="script.js"></script>
+  </body>
+</html>
